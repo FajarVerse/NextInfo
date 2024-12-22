@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const NavbarRef = useRef(null);
@@ -20,7 +21,7 @@ const Navbar = () => {
   return (
     <>
       <header
-        className="py-5 bg-background sticky top-0 left-0 right-0 transition duration-300 ease-in"
+        className="py-5 bg-background absolute top-0 left-0 right-0 transition duration-300 ease-in"
         ref={HeaderRef}
       >
         <div className="container">
@@ -41,18 +42,18 @@ const Navbar = () => {
                 className="invisible opacity-0 w-36 px-5 py-3 bg-secondary rounded-xl absolute -translate-y-4 z-50 transition duration-500 ease-in-out"
                 ref={NavbarRef}
               >
-                <ul className="block">
+                <ul className="flex flex-col gap-3">
                   <li className="navbar-list">
-                    <a href="">Home</a>
+                    <Link to={"/home"}>Home</Link>
                   </li>
                   <li className="navbar-list">
-                    <a href="">News</a>
+                    <Link to={"/news"}>News</Link>
                   </li>
                   <li className="navbar-list">
-                    <a href="">About Us</a>
+                    <Link to={"/about"}>About Us</Link>
                   </li>
                   <li className="navbar-list">
-                    <a href="">Contact</a>
+                    <Link to={"/contact"}>Contact</Link>
                   </li>
                 </ul>
               </div>
