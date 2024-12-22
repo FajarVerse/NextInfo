@@ -1,9 +1,13 @@
+import { Link } from "react-router";
+
 const NewsCard = (props) => {
-  const { children } = props;
+  const { url, children } = props;
 
   return (
     <>
-      <div className="w-full h-28 flex gap-3">{children}</div>
+      <Link to={url}>
+        <div className="w-full h-28 flex gap-3">{children}</div>
+      </Link>
     </>
   );
 };
