@@ -5,7 +5,7 @@ const NewsCard = (props) => {
 
   return (
     <>
-      <Link to={url}>
+      <Link to={url} className="w-full hover:scale-105 transition duration-300 ease-in-out">
         <div className="w-full h-28 flex gap-3">{children}</div>
       </Link>
     </>

@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import "./index.css";
 import App from "./App.jsx";
 import Home from "./pages/home.jsx";
+import News from "./pages/news.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/news",
+    element: <News />,
   },
   {
     path: "/about",

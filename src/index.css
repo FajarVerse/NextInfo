@@ -25,3 +25,7 @@
 .breaking-card {
   @apply w-[88%] h-48 px-5 pb-5 bg-primary rounded-xl flex-shrink-0 overflow-hidden flex items-end;
 }
+
+.category-btn {
+  @apply w-28 h-8 bg-secondary rounded-full font-open_sans font-medium text-[0.9rem] tracking-tight flex-shrink-0 transition-all duration-300 ease-in-out;
+}
