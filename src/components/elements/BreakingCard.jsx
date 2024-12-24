@@ -5,7 +5,7 @@ const BreakingCard = (props) => {
 
   return (
     <>
-      <Link to={url} className="w-full">
+      <Link to={url} className="w-full flex-shrink-0">
         <div
           className="breaking-card"
           style={{ backgroundImage: `url(${background})` }}
