@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { FilterData } from "./FilterData";
 import { getRecomendNews } from "../services/recomend.service";
+import { FilterData } from "./FilterData";
 
 export const RecomendNewsData = () => {
   const [recomendNews, setRecomendNews] = useState([]);

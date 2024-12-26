@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
-import { FilterData } from "./FilterData";
-import { getNewsByTopic } from "../services/topicnews.service";
 import { Topic } from "../context/Topic";
+import { getNewsByTopic } from "../services/topicnews.service";
+import { FilterData } from "./FilterData";
 
 export const MoreNewsData = () => {
   const [moreNews, setMoreNews] = useState([]);

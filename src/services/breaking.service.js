@@ -6,7 +6,7 @@ export const getBreakingNews = async () => {
   try {
     const cacheData = localStorage.getItem(cacheKey);
     if (cacheData) {
-      // console.log(JSON.parse(cacheData));
+      // console.log("dipanggil ulang");
       return JSON.parse(cacheData);
     }
 
@@ -15,7 +15,7 @@ export const getBreakingNews = async () => {
     );
 
     localStorage.setItem(cacheKey, JSON.stringify(response.data));
-    // console.log(response);
+    // console.log("dipanggil");
     return response.data;
   } catch (error) {
     console.log(error.message);

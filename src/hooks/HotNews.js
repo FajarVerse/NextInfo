@@ -1,12 +1,12 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { FilterData } from "./FilterData";
 import { getNewsHeadlines } from "../services/topicheadlines.service";
 import { Topic } from "../context/Topic";
 
 export const HotNewsData = () => {
-  const [hotNews, setHotNews] = useState();
+  const [hotNews, setHotNews] = useState([]);
   const handleFilterData = FilterData;
-  const {topic} = useContext(Topic);
+  const { topic } = useContext(Topic);
 
   useEffect(() => {
     const requiredKey = ["title", "url", "urlToImage"];
