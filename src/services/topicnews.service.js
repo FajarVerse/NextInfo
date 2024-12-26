@@ -17,7 +17,7 @@ export const getNewsByTopic = async (topic) => {
 
       if (topic) {
         const response = await axios.get(
-          `https://newsapi.org/v2/top-headlines?category=${topic}&pageSize=50&apiKey=fc8559c748ea436cbfa27b9e4ea7f7a9`
+          `https://newsapi.org/v2/top-headlines?category=${topic}&pageSize=100&apiKey=fc8559c748ea436cbfa27b9e4ea7f7a9`
         );
         localStorage.setItem(
           `${cacheKey}${topic}`,

@@ -3,7 +3,7 @@ import { FilterData } from "./FilterData";
 import { getNewsByTopic } from "../services/topicnews.service";
 import { Topic } from "../context/Topic";
 
-export const MoreNews = () => {
+export const MoreNewsData = () => {
   const [moreNews, setMoreNews] = useState([]);
   const { topic } = useContext(Topic);
   const hanldeFilterData = FilterData;

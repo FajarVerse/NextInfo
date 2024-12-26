@@ -23,7 +23,7 @@
 }
 
 .breaking-card {
-  @apply w-full h-48 px-5 pb-5 bg-primary rounded-xl overflow-hidden flex items-end bg-cover bg-center;
+  @apply w-full h-44 px-5 pb-5 bg-primary rounded-xl overflow-hidden flex items-end bg-cover bg-center;
 }
 
 .category-btn {
