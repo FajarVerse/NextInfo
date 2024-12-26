@@ -1,24 +1,12 @@
-import { useEffect, useState } from "react";
+import { BreakingNewsData } from "../../../hooks/BreakingNews";
 import BreakingCard from "../../elements/BreakingCard";
 import CustomLink from "../../elements/CustomLink";
 import Header from "../../elements/Header";
-import { getBreakingNews } from "../../../services/breaking.service";
 
 const BreakingNews = () => {
-  const [breakingNews, setBreakingNews] = useState([]);
+  const breakingNews = BreakingNewsData();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const newsData = await getBreakingNews(setBreakingNews);
-      if (newsData) {
-        setBreakingNews(newsData.articles || []);
-      }
-    };
-
-    fetchData();
-  }, []);
-  console.log(breakingNews);
-
+  console.info(breakingNews);
   return (
     <>
       <div className="w-full">
@@ -34,7 +22,6 @@ const BreakingNews = () => {
               <BreakingCard key={i} background={news.urlToImage}>
                 {news.title.substring(0, 35)} ...
               </BreakingCard>
-
             ))}
         </div>
       </div>

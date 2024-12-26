@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import Home from "./pages/home.jsx";
 import News from "./pages/news.jsx";
+import TopicContextProvider from "./context/Topic.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <TopicContextProvider>
+      <RouterProvider router={router} />
+    </TopicContextProvider>
   </StrictMode>
 );

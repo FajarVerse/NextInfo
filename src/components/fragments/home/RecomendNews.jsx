@@ -1,8 +1,13 @@
+import { RecomendNewsData } from "../../../hooks/RecomendNews";
 import CustomLink from "../../elements/CustomLink";
 import NewsCard from "../../elements/NewsCard";
 import SubHeader from "../../elements/SubHeader";
 
 const RecomendNews = () => {
+  const recomendNews = RecomendNewsData();
+
+  console.log(recomendNews);
+
   return (
     <>
       <div className="w-full mt-5">
@@ -13,14 +18,17 @@ const RecomendNews = () => {
           </CustomLink>
         </div>
         <div className="w-full px-1 flex flex-col gap-3">
-          <NewsCard>
-            <NewsCard.NewsImage />
-            <NewsCard.NewsBody
-              title="Title"
-              author="Gifari"
-              date="2020-10-01"
-            />
-          </NewsCard>
+          {recomendNews.length > 0 &&
+            recomendNews.map((news, i) => (
+              <NewsCard key={i} url={news.url}>
+                <NewsCard.NewsImage image={news.urlToImage} />
+                <NewsCard.NewsBody
+                  title={news.title.substr(0, 20)}
+                  author={news.source.name}
+                  date={news.publishedAt.substr(0, 10)}
+                />
+              </NewsCard>
+            ))}
         </div>
       </div>
     </>

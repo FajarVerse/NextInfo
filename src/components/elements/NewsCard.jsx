@@ -5,7 +5,10 @@ const NewsCard = (props) => {
 
   return (
     <>
-      <Link to={url} className="w-full hover:scale-105 transition duration-300 ease-in-out">
+      <Link
+        to={url}
+        className="w-full hover:scale-105 transition duration-300 ease-in-out"
+      >
         <div className="w-full h-28 flex gap-3">{children}</div>
       </Link>
     </>
@@ -17,9 +20,10 @@ const NewsImage = (props) => {
 
   return (
     <>
-      <div className="w-[35%] bg-blue-700 rounded-xl">
-        <img src={`${image}`} alt="" className="w-full" />
-      </div>
+      <div
+        className="w-[35%] bg-blue-700 rounded-xl bg-center bg-cover"
+        style={{ backgroundImage: `url(${image})` }}
+      ></div>
     </>
   );
 };
@@ -30,14 +34,14 @@ const NewsBody = (props) => {
   return (
     <>
       <div className="w-4/6 flex flex-col justify-between">
-        <h3 className="font-open_sans font-bold text-2xl text-primary">
-          {title}
+        <h3 className="font-open_sans font-bold text-lg text-primary">
+          {title}...
         </h3>
-        <div className="w-full flex justify-between">
-          <p className="font-open_sans font-semibold text-base text-slate-500">
+        <div className="w-full flex justify-between items-end">
+          <p className="font-open_sans font-semibold text-xs text-slate-500">
             {author}
           </p>
-          <p className="font-open_sans font-semibold text-base text-slate-500">
+          <p className="font-open_sans font-semibold text-xs text-slate-500">
             {date}
           </p>
         </div>
