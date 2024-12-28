@@ -5,12 +5,13 @@ export default {
     extend: {
       colors: {
         background: "#FFFFFF",
-        primary: "#2D3748",
-        secondary: "#CBD5E0",
-        highlight: "#4A5568",
+        primary: "#64B5F6",
+        secondary: "#1e293b",
+        lightSlate: "#4A5568",
+        highlight: "#3b82f6",
       },
       fontFamily: {
-        montserrat: "Montserrat",
+        kanit: "Kanit",
         open_sans: "Open Sans",
       },
     },

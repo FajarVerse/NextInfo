@@ -6,7 +6,7 @@ const Topics = () => {
 
   return (
     <>
-      <div className="flex gap-3 overflow-x-scroll">
+      <div className="flex gap-3 px-1 py-2 overflow-x-scroll">
         <button className="category-btn" onClick={() => setTopic(null)}>
           All
         </button>

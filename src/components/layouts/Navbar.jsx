@@ -21,14 +21,14 @@ const Navbar = () => {
   return (
     <>
       <header
-        className="py-5 bg-background absolute top-0 left-0 right-0 transition duration-300 ease-in"
+        className="w-full py-4 bg-background rounded-none absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out"
         ref={HeaderRef}
       >
         <div className="container">
           <div className="w-full px-5 flex justify-between">
             <div>
               <div className="navbar-btn group" onClick={handleClickMenu}>
-                <a href="#" className="navbar-icon">
+                <Link to={"#"} className="navbar-icon">
                   <svg
                     className="fill-inherit"
                     xmlns="http://www.w3.org/2000/svg"
@@ -36,10 +36,10 @@ const Navbar = () => {
                   >
                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                   </svg>
-                </a>
+                </Link>
               </div>
               <div
-                className="invisible opacity-0 w-36 px-5 py-3 bg-secondary rounded-xl absolute -translate-y-4 z-50 transition duration-500 ease-in-out"
+                className="invisible opacity-0 w-36 px-5 py-3 bg-background rounded-xl absolute shadow-md shadow-slate-400 -translate-y-4 z-50 transition duration-500 ease-in-out"
                 ref={NavbarRef}
               >
                 <ul className="flex flex-col gap-3">
@@ -58,7 +58,7 @@ const Navbar = () => {
                 </ul>
               </div>
             </div>
-            <div className="flex gap-5">
+            <div className="flex gap-3">
               <div className="navbar-btn group">
                 <a href="#" className="navbar-icon">
                   <svg

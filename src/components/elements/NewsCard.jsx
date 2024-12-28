@@ -7,7 +7,7 @@ const NewsCard = (props) => {
     <>
       <Link
         to={url}
-        className="w-full hover:scale-105 transition duration-300 ease-in-out"
+        className="w-full rounded-xl shadow-sm shadow-transparent hover:shadow-lightSlate transition duration-300 ease-in-out"
       >
         <div className="w-full h-28 flex gap-3">{children}</div>
       </Link>
@@ -33,15 +33,15 @@ const NewsBody = (props) => {
 
   return (
     <>
-      <div className="w-4/6 flex flex-col justify-between">
-        <h3 className="font-open_sans font-bold text-lg text-primary">
+      <div className="w-4/6 pr-1 py-1 flex flex-col justify-between">
+        <h3 className="font-open_sans font-bold text-lg text-secondary">
           {title}...
         </h3>
-        <div className="w-full flex justify-between items-end">
-          <p className="font-open_sans font-semibold text-xs text-slate-500">
+        <div className="w-full flex justify-between items-end mb-0.5">
+          <p className="font-open_sans font-semibold text-sm text-lightSlate">
             {author}
           </p>
-          <p className="font-open_sans font-semibold text-xs text-slate-500">
+          <p className="font-open_sans font-semibold text-xs text-lightSlate">
             {date}
           </p>
         </div>

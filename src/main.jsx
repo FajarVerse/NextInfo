@@ -5,11 +5,12 @@ import "./index.css";
 import Home from "./pages/home.jsx";
 import News from "./pages/news.jsx";
 import TopicContextProvider from "./context/Topic.jsx";
+import App from "./App.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <App />,
   },
   {
     path: "/home",

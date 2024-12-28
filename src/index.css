@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 .navbar-list {
-  @apply font-open_sans font-bold text-lg text-highlight;
+  @apply font-open_sans font-semibold text-lg text-lightSlate hover:text-primary transition-colors duration-300 ease-in-out;
 }
 
 .navbar-btn {
-  @apply w-10 h-10 bg-secondary rounded-full flex justify-center items-center hover:bg-sky-500 hover:scale-110 transition-all duration-300 ease-in-out;
+  @apply w-8 h-8 bg-primary rounded-full flex justify-center items-center hover:bg-highlight hover:scale-110 transition-all duration-300 ease-in-out;
 }
 
 .navbar-icon {
-  @apply fill-highlight w-7 h-7 group-hover:fill-white transition duration-300 ease-in-out;
+  @apply fill-white w-6 h-6;
 }
 
 .navbar-menu-active {
@@ -19,7 +19,7 @@
 }
 
 .header-fixed {
-  @apply fixed bg-secondary bg-opacity-45 backdrop-blur-md transition duration-300 ease-in;
+  @apply w-[90%] fixed top-5 py-2 bg-background rounded-full shadow-md shadow-slate-300;
 }
 
 .breaking-card {
@@ -27,5 +27,5 @@
 }
 
 .category-btn {
-  @apply w-28 h-8 bg-secondary rounded-full font-open_sans font-medium text-[0.9rem] tracking-tight flex-shrink-0 transition-all duration-300 ease-in-out;
+  @apply h-8 px-6 bg-background shadow-sm shadow-lightSlate rounded-full font-open_sans font-semibold text-base text-lightSlate flex-shrink-0 hover:text-background hover:bg-primary transition-all duration-300 ease-in-out;
 }

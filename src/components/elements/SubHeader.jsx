@@ -4,7 +4,7 @@ const SubHeader = (props) => {
   return (
     <>
       <h2
-        className={`font-montserrat font-bold text-2xl text-primary ${className}`}
+        className={`font-kanit font-bold text-2xl text-secondary ${className}`}
       >
         {children}
       </h2>

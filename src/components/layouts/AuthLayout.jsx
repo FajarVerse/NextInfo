@@ -1,9 +1,9 @@
 const AuthLayout = (props) => {
-  const { children } = props;
+  const { className, children } = props;
 
   return (
     <>
-      <section className="py-24 pb-10">
+      <section className={`py-24 pb-10 ${className}`}>
         <div className="container">{children}</div>
       </section>
     </>
