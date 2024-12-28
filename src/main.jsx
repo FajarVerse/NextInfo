@@ -1,16 +1,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
+import TopicContextProvider from "./context/Topic.jsx";
 import "./index.css";
+import About from "./pages/about.jsx";
 import Home from "./pages/home.jsx";
 import News from "./pages/news.jsx";
-import TopicContextProvider from "./context/Topic.jsx";
-import App from "./App.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
     path: "/home",
@@ -22,6 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
+    element: <About />,
   },
   {
     path: "contact",

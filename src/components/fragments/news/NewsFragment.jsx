@@ -12,7 +12,7 @@ const NewsFragment = () => {
       <Navbar />
       <AuthLayout>
         <div className="w-full px-5">
-          <div className="w-full mb-5">
+          <div className="w-full mb-2">
             <Header className="text-5xl text-primary">Discover</Header>
             <Paragraph>
               Get the latest information from around the world at your

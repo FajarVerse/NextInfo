@@ -29,3 +29,7 @@
 .category-btn {
   @apply h-8 px-6 bg-background shadow-sm shadow-lightSlate rounded-full font-open_sans font-semibold text-base text-lightSlate flex-shrink-0 hover:text-background hover:bg-primary transition-all duration-300 ease-in-out;
 }
+
+.sosmed-icon {
+  @apply fill-white w-6 h-6;
+}

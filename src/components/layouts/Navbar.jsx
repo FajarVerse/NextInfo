@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <>
       <header
-        className="w-full py-4 bg-background rounded-none absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out"
+        className="w-full py-4 bg-background rounded-none absolute top-0 left-1/2 -translate-x-1/2 shadow-md shadow-transparent transition-all duration-300 ease-in-out"
         ref={HeaderRef}
       >
         <div className="container">
