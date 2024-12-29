@@ -9,7 +9,7 @@ const AboutFragment = () => {
     <>
       <Navbar />
       <AuthLayout className="bg-background">
-        <div className="w-full px-5">
+        <div className="w-full px-5 md:px-16 lg:px-14 xl:px-20">
           <AboutHeader />
           <AboutBody />
           <AboutFooter />

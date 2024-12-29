@@ -5,8 +5,8 @@ const ContactHeader = () => {
   return (
     <>
       <div className="w-full">
-        <Header>Contact Us</Header>
-        <Paragraph>
+        <Header className="text-center">Contact Us</Header>
+        <Paragraph className="text-center">
           Have some big idea or brand to develop and need help?
         </Paragraph>
       </div>

@@ -3,7 +3,7 @@ const Paragraph = (props) => {
 
   return (
     <>
-      <p className={`font-open_sans text-base text-lightSlate mt-2 ${className}`}>
+      <p className={`font-open_sans text-base text-lightSlate mt-2 ${className} md:text-lg lg:text-[1.1rem] xl:text-lg`}>
         {children}
       </p>
     </>

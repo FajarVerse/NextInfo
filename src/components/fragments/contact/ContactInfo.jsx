@@ -3,9 +3,9 @@ import { Link } from "react-router";
 const ContactInfo = () => {
   return (
     <>
-      <div className="w-full px-3 py-3 flex gap-14 flex-col justify-between bg-slate-800 rounded-xl ">
+      <div className="w-full px-3 py-3 flex gap-14 flex-col justify-between bg-slate-800 rounded-xl md:p-7 lg:w-2/5 lg:gap-10 xl:w-1/3">
         <div className="w-full">
-          <h3 className="font-kanit font-light text-2xl text-background mb-2">
+          <h3 className="font-kanit font-light text-2xl text-background mb-2 md:text-3xl">
             Contact Information
           </h3>
           <p className="paragraph-contact">

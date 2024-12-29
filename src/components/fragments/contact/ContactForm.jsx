@@ -4,23 +4,33 @@ import TextArea from "../../elements/TextArea";
 const ContactForm = () => {
   return (
     <>
-      <div className="w-full px-2 py-3">
-        <form action="">
-          <div className="w-full block">
-            <Input type="text" id="first-name" placeholder="First name" />
-            <Input type="text" id="last-name" placeholder="Last name" />
+      <div className="w-full px-2 py-3 lg:w-3/5 lg:py-0 xl:w-2/3">
+        <form action="" className="h-full">
+          <div className="w-full block lg:flex lg:justify-between lg:gap-5 lg:mb-3">
+            <Input
+              type="text"
+              id="first-name"
+              placeholder="First name"
+              className=""
+            />
+            <Input
+              type="text"
+              id="last-name"
+              placeholder="Last name"
+              className=""
+            />
           </div>
-          <div className="w-full block">
+          <div className="w-full block lg:flex lg:justify-between lg:gap-5 lg:mb-3">
             <Input type="number" id="phone" placeholder="No. phone" />
             <Input type="email" id="email" placeholder="Email" />
           </div>
           <div className="w-full">
-            <TextArea id="message" placeholde="Write message" />
+            <TextArea id="message" placeholder="Write message" />
           </div>
-          <div className="w-full">
+          <div className="w-full lg:flex lg:justify-end lg:mt-5">
             <button
               type="submit"
-              className="w-full py-2 bg-primary flex justify-center items-center gap-1 font-open_sans font-semibold text-base text-background rounded-md"
+              className="w-full py-2 bg-primary flex justify-center items-center gap-1 font-open_sans font-semibold text-base text-background rounded-md md:text-lg lg:w-1/3 lg:text-base lg:rounded-lg"
             >
               <span>
                 <svg
