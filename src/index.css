@@ -33,3 +33,15 @@
 .sosmed-icon {
   @apply fill-white w-6 h-6;
 }
+
+.input {
+  @apply w-full px-2 py-2 border-b-2 border-b-slate-300 outline-none mb-4 focus:border-b-primary text-sm transition duration-300 ease-in-out;
+}
+
+.message {
+  @apply w-full h-24 px-2 py-2 border-b-2 border-b-slate-300 outline-none mb-4 focus:border-b-primary text-sm transition duration-300 ease-in-out;
+}
+
+.paragraph-contact {
+  @apply font-open_sans font-light text-sm text-white;
+}

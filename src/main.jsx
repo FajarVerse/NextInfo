@@ -6,6 +6,7 @@ import "./index.css";
 import About from "./pages/about.jsx";
 import Home from "./pages/home.jsx";
 import News from "./pages/news.jsx";
+import Contact from "./pages/contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
   },
   {
     path: "contact",
+    element: <Contact />,
   },
 ]);
 
