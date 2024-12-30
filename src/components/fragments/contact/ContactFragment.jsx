@@ -6,7 +6,6 @@ import ContactHeader from "./ContactHeader";
 const ContactFragment = () => {
   return (
     <>
-      <Navbar />
       <AuthLayout>
         <div className="w-full px-5 md:px-16 xl:px-24">
           <ContactHeader />

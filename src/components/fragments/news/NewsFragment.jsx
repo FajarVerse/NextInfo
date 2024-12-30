@@ -1,7 +1,6 @@
 import Header from "../../elements/Header";
 import Paragraph from "../../elements/Paragraph";
 import AuthLayout from "../../layouts/AuthLayout";
-import Navbar from "../../layouts/Navbar";
 import HotNews from "./HotNews";
 import MoreNews from "./MoreNews";
 import Topics from "./Topics";
@@ -9,7 +8,6 @@ import Topics from "./Topics";
 const NewsFragment = () => {
   return (
     <>
-      <Navbar />
       <AuthLayout>
         <div className="w-full px-5">
           <div className="w-full mb-2">

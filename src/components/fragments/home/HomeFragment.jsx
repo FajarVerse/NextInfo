@@ -22,7 +22,6 @@ const HomeFragment = () => {
 
   return (
     <>
-      <Navbar />
       <AuthLayout>
         <div className="px-5 w-full">
           <BreakingNews />

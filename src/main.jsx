@@ -7,6 +7,7 @@ import About from "./pages/about.jsx";
 import Home from "./pages/home.jsx";
 import News from "./pages/news.jsx";
 import Contact from "./pages/contact.jsx";
+import TrackingMouseContextProvider from "./context/TrackingMouse.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,8 +34,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <TopicContextProvider>
-      <RouterProvider router={router} />
-    </TopicContextProvider>
+    <TrackingMouseContextProvider>
+      <TopicContextProvider>
+        <RouterProvider router={router} />
+      </TopicContextProvider>
+    </TrackingMouseContextProvider>
   </StrictMode>
 );

@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 .navbar-list {
-  @apply font-open_sans font-semibold text-lg text-lightSlate hover:text-primary transition-colors duration-300 ease-in-out;
-}
-
-.navbar-btn {
-  @apply w-8 h-8 bg-primary rounded-full flex justify-center items-center hover:bg-highlight hover:scale-110 transition-all duration-300 ease-in-out;
+  @apply font-open_sans font-semibold text-lg text-lightSlate hover:text-primary transition-colors duration-300 ease-in-out lg:text-xl;
 }
 
 .navbar-icon {
-  @apply fill-white w-6 h-6;
+  @apply fill-slate-500 w-8 h-8 hover:scale-110 hover:fill-primary transition-all duration-300 ease-in;
 }
 
-.navbar-menu-active {
-  @apply visible opacity-100 translate-y-3.5;
+.navbar-btn {
+  @apply w-8 h-8 bg-primary rounded-full flex justify-center items-center hover:bg-highlight hover:scale-110 transition-all duration-300 ease-in-out md:w-10 md:h-10;
 }
 
-.header-fixed {
-  @apply w-[90%] fixed top-5 py-2 bg-background rounded-full shadow-md shadow-slate-300;
+.menu-active {
+  @apply lg:translate-y-0  lg:opacity-100 lg:visible;
+}
+
+.menu-nonactive {
+  @apply lg:translate-y-10 lg:opacity-0  lg:visible;
 }
 
 .breaking-card {
