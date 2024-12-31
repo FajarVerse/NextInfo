@@ -21,7 +21,7 @@ const AuthLayout = (props) => {
     <>
       <Menu />
       <section
-        className={`py-24 pb-10 ${className} lg:py-28 xl:py-32`}
+        className={`py-10 pb-10 ${className} lg:py-28 xl:py-32`}
         onMouseMove={() => handleMouseMove()}
       >
         <div className="container mx-auto">{children}</div>

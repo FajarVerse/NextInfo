@@ -1,49 +1,33 @@
-import visi from "../../../assets/image/vision.svg";
-import mission from "../../../assets/image/mission.svg";
-import SubHeader from "../../elements/SubHeader";
+import aboutUs from "../../../assets/image/about.svg";
+import Header from "../../elements/Header";
 import Paragraph from "../../elements/Paragraph";
 
 const AboutBody = () => {
   return (
     <>
-      <div className="w-full px-1 md:px-5 lg:mt-10">
-        <div className="w-full mb-5 xl:mb-10">
-          <SubHeader className="lg:text-center">Vision</SubHeader>
-          <div className="w-full block lg:flex lg:flex-row-reverse lg:items-center">
-            <div className="w-full lg:w-1/2">
-              <Paragraph>
-                Our vision is to be a trusted source that supports better
-                decision making.
-              </Paragraph>
-            </div>
-            <div className="w-full px-5 lg:w-1/2">
-              <img
-                src={visi}
-                alt="ilustrasi visi"
-                className="w-full md:w-3/4 md:mx-auto lg:w-4/5"
-              />
-            </div>
-          </div>
+      <div className="w-full lg:self-center">
+        <img
+          src={aboutUs}
+          alt="about"
+          className="w-[90%] mx-auto md:w-3/4 lg:w-4/5 xl:w-[90%]"
+        />
+      </div>
+      <div className="w-full h-full mt-5 lg:flex lg:flex-col xl:gap-10 ">
+        <div className="w-full hidden lg:block">
+          <Header>About Us</Header>
         </div>
-
-        <div className="w-full mt-7">
-          <SubHeader className="lg:text-center">Mission</SubHeader>
-          <div className="w-full block lg:flex lg:flex-row-reverse lg:items-center">
-            <div className="w-full px-5  lg:w-1/2">
-              <img
-                src={mission}
-                alt="ilustrasi misi"
-                className="w-full md:w-3/4 md:mx-auto lg:w-4/5"
-              />
-            </div>
-            <div className="w-full lg:w-1/2">
-              <Paragraph>
-                Our mission is to present the latest news and insights, educate
-                readers, and provide space for new perspectives that enrich your
-                perspective on global issues.
-              </Paragraph>
-            </div>
-          </div>
+        <div className="w-full block">
+          <Paragraph>
+            We are here to provide accurate, relevant and information
+            trustworthy for you. In the midst of the rapid flow of news and
+            information, we are committed to filtering and presenting meaningful
+            content, helping you stay connected with world.
+          </Paragraph>
+          <Paragraph>
+            We deliver the latest and most trusted news from a variety of topics
+            through News API integration, ensuring relevant and accurate
+            information for you.
+          </Paragraph>
         </div>
       </div>
     </>
